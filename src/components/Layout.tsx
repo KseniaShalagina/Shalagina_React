@@ -6,6 +6,8 @@ import SecondBlock from "./Section/SecondBlock/SecondBlock";
 import ThirdBlock from "./Section/ThirdBlock/ThirdBlock";
 import FourthBlock from "./Section/FourthBlock/FourthBlock";
 import FifthBlock from './Section/FifthBlock/FifthBlock';
+import Footer from './Footer/Footer';
+
 function Layout() {
     return (
         <>
@@ -18,6 +20,7 @@ function Layout() {
                 <FourthBlock/>
                 <FifthBlock/>
             </main>
+            <Footer/>
         </>
     );
 }
