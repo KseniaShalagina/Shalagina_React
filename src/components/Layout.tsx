@@ -1,16 +1,20 @@
 import React, { ReactNode } from "react";
 import Header from './Header/Header'
- interface Props{
-    children: ReactNode;
- }
-function Layout({children}:Props) {
+import FirstBlock from "./Section/FirstBlock/FirstBlock";
+import Fon from "./Section/Fon/Fon";
+import Image from "./Section/Image/Image";
+import SecondBlock from "./Section/SecondBlock/SecondBlock";
+
+
+function Layout() {
     return (
         <>
-        <Header/> 
-        <main>
-            {children}
-        </main>
-        
+            <Header />
+            <main>
+                <FirstBlock />
+                <Image><Fon/></Image>
+                <SecondBlock/>
+            </main>
         </>
     );
 }

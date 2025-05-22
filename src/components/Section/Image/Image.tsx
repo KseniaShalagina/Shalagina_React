@@ -1,13 +1,23 @@
-import React from "react";
+import React, { ReactNode } from "react";
+import Rectangle2 from '../../../assets/image/Rectangle 2.svg'
+import '../../../assets/styles/Image.css'
 
-function Image() {
+interface propsFon{
+    children: ReactNode;
+}
+function Image({children}:propsFon) {
     return (
-        //<div className="swiper">
-           // <div className="swiper-wrapper">
-              //  <div className="swiper-slide"><img src={img/Rectangle 2.svg} className="first_img"></div>
-               // <div className="swiper-slide"><img src="img/cover.jpg" className="first_img"></div>
-           // </div>
-       // </div>
+        <>
+        <section className="image">
+        <div className="swiper">
+           <div className="swiper-wrapper">
+               <div className="swiper-slide"><img src={Rectangle2}className="first_img"/></div>
+               {/* <div className="swiper-slide"><img src={Rectangle2} className="first_img"/></div> */}
+           </div>
+       </div>
+       {children}
+       </section>
+       </>
     );
 }
- export default Image;
+export default Image;
