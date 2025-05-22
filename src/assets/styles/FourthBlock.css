@@ -1,0 +1,22 @@
+connect {
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    margin: auto;
+
+}
+
+.fourth_block {
+    margin-bottom: 100px;
+}
+
+.fourth_img {
+    width: 400;
+    height: 400;
+    gap: 10px;
+}
+
+.fourth_txt {
+    width: 700px;
+    margin: 137px;
+}
