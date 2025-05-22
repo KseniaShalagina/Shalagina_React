@@ -1,0 +1,73 @@
+header {
+    height: 100px;
+}
+
+.logo {
+    text-decoration: none;
+    font-style: normal;
+    font-family: Inter;
+    font-size: 24px;
+    line-height: 28.8px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.03em;
+    color: #080305;
+    /*margin-left: 120px;*/
+    /* margin-right: 671px;*/
+}
+
+.butt {
+    position: static;
+}
+
+.headers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.sing {
+    background-color: #3D1EDD;
+    color: white;
+    width: 145px;
+    height: 50px;
+    border-style: solid;
+    border: 0px;
+    padding: 14px 43px 14px 43px;
+    letter-spacing: -0.02em;
+    margin-right: 16px;
+}
+
+.log {
+    width: 145px;
+    height: 50px;
+    border: 1px;
+    border-style: solid;
+    border-color: #E5DEFD;
+    background-color: white;
+    padding: 14px 49.5px 14px 49.5px;
+    color: #121212;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.logs {
+    width: 145px;
+    height: 50px;
+    border-style: solid;
+    border: 0px;
+    background-color: white;
+    padding: 14px 20px 14px 20px;
+    color: #121212;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-right: 16px;
+}
