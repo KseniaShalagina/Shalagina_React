@@ -5,6 +5,7 @@ import Image from "./Section/Image/Image";
 import SecondBlock from "./Section/SecondBlock/SecondBlock";
 import ThirdBlock from "./Section/ThirdBlock/ThirdBlock";
 import FourthBlock from "./Section/FourthBlock/FourthBlock";
+import FifthBlock from './Section/FifthBlock/FifthBlock';
 function Layout() {
     return (
         <>
@@ -15,6 +16,7 @@ function Layout() {
                 <SecondBlock/>
                 <ThirdBlock/>
                 <FourthBlock/>
+                <FifthBlock/>
             </main>
         </>
     );
