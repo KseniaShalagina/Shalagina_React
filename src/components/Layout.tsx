@@ -4,7 +4,7 @@ import FirstBlock from "./Section/FirstBlock/FirstBlock";
 import Fon from "./Section/Fon/Fon";
 import Image from "./Section/Image/Image";
 import SecondBlock from "./Section/SecondBlock/SecondBlock";
-
+import ThirdBlock from "./Section/ThirdBlock/ThirdBlock";
 
 function Layout() {
     return (
@@ -14,6 +14,8 @@ function Layout() {
                 <FirstBlock />
                 <Image><Fon/></Image>
                 <SecondBlock/>
+                <ThirdBlock/>
+
             </main>
         </>
     );
