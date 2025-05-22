@@ -1,11 +1,16 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Header from './Header/Header'
-import FirstBlock from './Section/FirstBlock/FirstBlock'
-function Layout() {
+ interface Props{
+    children: ReactNode;
+ }
+function Layout({children}:Props) {
     return (
         <>
-        <Header/>
-        <FirstBlock/>
+        <Header/> 
+        <main>
+            {children}
+        </main>
+        
         </>
     );
 }
