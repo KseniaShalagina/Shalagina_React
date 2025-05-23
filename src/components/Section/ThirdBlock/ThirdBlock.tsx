@@ -106,6 +106,27 @@ function ThirdBlock() {
                 </div>
             </div>
             <div className="cards" id="information-cards">
+                <div className="card">
+                    <button className="cardbutt"></button>
+                    <h2 className="namecard">Professional Profile</h2>
+                    <p className="cardtxt">We know finding the right job is stressful, so we’ve made it simple. It only
+                        takes a few minutes. Create a free portfolio on briefolio to show your best self and get
+                        discovered by recruiter</p>
+                </div>
+                    <div className="card">
+                        <button className="cardbutt"></button>
+                        <h2 className="namecard">Best Portfolio</h2>
+                        <p className="cardtxt">We know finding the right job is stressful, so we’ve made it simple. It only
+                            takes a few minutes. Create a free portfolio on briefolio to show your best self and get
+                            discovered by recruiter</p>
+                    </div>
+                    <div className="card">
+                        <button className="cardbutt"></button>
+                        <h2 className="namecard">Powerful Resume</h2>
+                        <p className="cardtxt">We know finding the right job is stressful, so we’ve made it simple. It only
+                            takes a few minutes. Create a free portfolio on briefolio to show your best self and get
+                            discovered by recruiter</p>
+                    </div>
             </div>
         </section>
     );

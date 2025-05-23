@@ -12,14 +12,14 @@ function Layout() {
     return (
         <>
             <Header />
-            <main>
+            {/* <main> */}
                 <FirstBlock />
                 <Image><Fon/></Image>
                 <SecondBlock/>
                 <ThirdBlock/>
                 <FourthBlock/>
                 <FifthBlock/>
-            </main>
+            {/* </main> */}
             <Footer/>
         </>
     );
