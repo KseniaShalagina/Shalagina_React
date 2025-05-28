@@ -1,26 +1,16 @@
+import React, { ReactElement, ReactNode } from "react";
 import Header from './Header/Header'
-import FirstBlock from "./Section/FirstBlock/FirstBlock";
-import Fon from "./Section/Fon/Fon";
-import Image from "./Section/Image/Image";
-import SecondBlock from "./Section/SecondBlock/SecondBlock";
-import ThirdBlock from "./Section/ThirdBlock/ThirdBlock";
-import FourthBlock from "./Section/FourthBlock/FourthBlock";
-import FifthBlock from './Section/FifthBlock/FifthBlock';
-import Footer from './Footer/Footer';
+import Footer from "./Footer/Footer"
 
-function Layout() {
+interface Layoutprops{
+    children: ReactNode;
+}
+function Layout({ children }: Layoutprops) {
     return (
         <>
-            <Header />
-            {/* <main> */}
-                <FirstBlock />
-                <Image><Fon/></Image>
-                <SecondBlock/>
-                <ThirdBlock/>
-                <FourthBlock/>
-                <FifthBlock/>
-            {/* </main> */}
-            <Footer/>
+        <Header/>
+        <main>{children}</main>
+        <Footer/>
         </>
     );
 }

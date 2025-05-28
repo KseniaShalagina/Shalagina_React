@@ -4,7 +4,7 @@ import Image from "../Image/Image";
 
 function Fon() {
     return (
-        // <Image>
+        //<Image>
             <section className="fonn">
             <div className="fon"></div>
             </section>

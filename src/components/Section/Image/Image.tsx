@@ -1,9 +1,9 @@
-import React, { ReactNode } from "react";
+import React, { JSX, ReactNode } from "react";
 import Rectangle2 from '../../../assets/image/Rectangle 2.svg'
 import '../../../assets/styles/Image.css'
 
 interface propsFon{
-    children: ReactNode;
+    children: JSX.Element;
 }
 function Image({children}:propsFon) {
     return (
