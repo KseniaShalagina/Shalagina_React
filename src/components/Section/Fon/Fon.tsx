@@ -1,6 +1,6 @@
 import React from "react";
 import '../../../assets/styles/Fon.css'
-import Image from "../Image/Image";
+//import Image from "../Image/Image";
 
 function Fon() {
     return (

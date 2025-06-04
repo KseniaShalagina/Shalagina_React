@@ -2,10 +2,10 @@ import React, { ReactElement, ReactNode } from "react";
 import Header from './Header/Header'
 import Footer from "./Footer/Footer"
 
-interface Layoutprops{
+interface Layoutprops {
     children: ReactNode;
 }
-function Layout({ children }: Layoutprops) {
+function Layout({children}:Layoutprops) {
     return (
         <>
         <Header/>
