@@ -5,12 +5,12 @@ import Footer from "./Footer/Footer"
 interface Layoutprops {
     children: ReactNode;
 }
-function Layout({children}:Layoutprops) {
+function Layout({ children }: Layoutprops) {
     return (
         <>
-        <Header/>
-        <main>{children}</main>
-        <Footer/>
+            <Header />
+            <main>{children}</main>
+            <Footer />
         </>
     );
 }
