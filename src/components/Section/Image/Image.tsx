@@ -5,9 +5,11 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
 import 'swiper/swiper-bundle.css';
 import PeopleOffice from '../../../assets/image/0x0.webp'
+
 interface propsFon {
     children: JSX.Element;
 }
+
 function Image({ children }: propsFon) {
     return (
         <>

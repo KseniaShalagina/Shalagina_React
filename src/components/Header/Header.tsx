@@ -1,9 +1,8 @@
-//import React from "react";
 import '../../assets/styles/Header.css'
 
-function Header(){
-    return (
-        <header>
+function Header() {
+  return (
+    <header>
       <div className="headers">
         <div>
           <a href="#" className="logo"><b>Jobly</b></a>
@@ -21,6 +20,6 @@ function Header(){
         </div>
       </div>
     </header>
-    );
+  );
 }
 export default Header;

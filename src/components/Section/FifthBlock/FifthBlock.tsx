@@ -11,7 +11,7 @@ function FifthBlock() {
                         <button className="joins"> Join Now</button>
                     </div>
                 </div>
-                <img src={ITPeople} className="fifth_img"/>
+                <img src={ITPeople} className="fifth_img" />
             </div>
         </section>
     );
