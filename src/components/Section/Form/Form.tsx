@@ -8,7 +8,8 @@ function Form({ active, setActive }: propsForm) {
     useEffect(() => {
         if (active) {
             document.body.style.overflow = 'hidden';
-        } else {
+        } 
+        else {
             document.body.style.overflow = 'auto';
         }
     }, [active]);
