@@ -6,11 +6,11 @@ import { Autoplay } from 'swiper/modules'
 import 'swiper/swiper-bundle.css';
 import PeopleOffice from '../../../assets/image/0x0.webp'
 
-interface propsFon {
+interface PropsFon {
     children: JSX.Element;
 }
 
-function Image({ children }: propsFon) {
+function Image({ children }: PropsFon) {
     return (
         <>
             <section className="image">

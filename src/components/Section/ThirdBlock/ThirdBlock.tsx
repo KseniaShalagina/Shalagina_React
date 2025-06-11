@@ -1,11 +1,15 @@
+import React from 'react'
 import Ava from '../../../assets/image/Ellipse 512(1).svg'
 import Fon from '../../../assets/image/Bitmap.svg'
 import Foto1 from '../../../assets/image/Frame 427320285.svg'
 import Foto2 from '../../../assets/image/Frame 427320288.svg'
 import Foto3 from '../../../assets/image/Frame 427320289.svg'
 import '../../../assets/styles/ThirdBlock.css'
+interface PropsCards {
+    children: React.ReactNode;
+}
 
-function ThirdBlock() {
+function ThirdBlock({children}:PropsCards) {
     return (
         <section className="third_blok">
             <h2 className="name_blok"> Everything you want to know in one place.
@@ -72,7 +76,8 @@ function ThirdBlock() {
                     </div>
                 </div>
             </div>
-            <div className="cards" id="information-cards">
+            {children}
+            {/* <div className="cards" id="information-cards">
                 <div className="card">
                     <button className="cardbutt"></button>
                     <h2 className="namecard">Professional Profile</h2>
@@ -94,7 +99,7 @@ function ThirdBlock() {
                         takes a few minutes. Create a free portfolio on briefolio to show your best self and get
                         discovered by recruiter</p>
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 }

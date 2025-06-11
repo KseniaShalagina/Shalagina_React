@@ -9,6 +9,7 @@ import FourthBlock from './components/Section/FourthBlock/FourthBlock'
 import ThirdBlock from './components/Section/ThirdBlock/ThirdBlock'
 import FifthBlock from './components/Section/FifthBlock/FifthBlock'
 import Preloader from './components/Preloader/Preloader'
+import CardList from './components/CardList/CardList'
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -24,7 +25,7 @@ function App() {
           <FirstBlock />
           <Image><Fon /></Image>
           <SecondBlock />
-          <ThirdBlock />
+          <ThirdBlock><CardList/></ThirdBlock>
           <FourthBlock />
           <FifthBlock />
         </Layout>
