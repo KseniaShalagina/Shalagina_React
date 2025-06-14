@@ -25,7 +25,7 @@ function App() {
           <FirstBlock />
           <Image><Fon /></Image>
           <SecondBlock />
-          <ThirdBlock><CardList/></ThirdBlock>
+          <ThirdBlock><CardList /></ThirdBlock>
           <FourthBlock />
           <FifthBlock />
         </Layout>

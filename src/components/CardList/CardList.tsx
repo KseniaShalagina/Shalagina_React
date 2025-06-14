@@ -14,22 +14,22 @@ function CardList() {
 
     useEffect(() => {
         const fetchData = async () => {
-        setLoading(true);
-        setError(null);
-        try {
-            const response = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=3 ')
-                    if (!response.ok) {
-                        throw new Error("Ошибка загрузки!!!");
-                    }
-                     const data = await response.json();
+            setLoading(true);
+            setError(null);
+            try {
+                const response = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=3')
+                if (!response.ok) {
+                    throw new Error("Ошибка загрузки!!!");
+                }
+                const data = await response.json();
                 setCards(data);
-        }
-        catch (error) {
-            setError("error");
-        } finally {
-            setLoading(false);
-        }
-    };
+            }
+            catch (error) {
+                setError("error");
+            } finally {
+                setLoading(false);
+            }
+        };
         fetchData();
     }, []);
     if (loading) {
@@ -40,10 +40,10 @@ function CardList() {
     }
     return (
         <div className="cards">
-            {cards.map(card => (
+            {cards.map((card,index) => (
                 <Card
                     key={card.id}
-                    card_name={card.title}
+                    card_name={ `Comment ${index + 1}`}
                     card_text={card.body}
                 />
             ))}
