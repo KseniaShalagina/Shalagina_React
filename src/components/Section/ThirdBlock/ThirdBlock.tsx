@@ -5,15 +5,16 @@ import Foto1 from '../../../assets/image/Frame 427320285.svg'
 import Foto2 from '../../../assets/image/Frame 427320288.svg'
 import Foto3 from '../../../assets/image/Frame 427320289.svg'
 import '../../../assets/styles/ThirdBlock.css'
+import { Link } from 'react-router-dom'
 interface PropsCards {
     children: React.ReactNode;
 }
 
-function ThirdBlock({children}:PropsCards) {
+function ThirdBlock({ children }: PropsCards) {
     return (
         <section className="third_blok">
-            <h2 className="name_blok"> Everything you want to know in one place.
-            </h2>
+            <Link to="/cards" className="name_link"><h2 className="name_blok"> Everything you want to know in one place.
+            </h2></Link>
             <div className="backgroundd">
                 <img src={Fon} className="background" />
                 <div className="big_card_inf">

@@ -1,15 +1,12 @@
 import { useEffect, useState } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css'
 import Layout from './components/Layout'
-import FirstBlock from './components/Section/FirstBlock/FirstBlock'
-import SecondBlock from './components/Section/SecondBlock/SecondBlock'
-import Image from './components/Section/Image/Image'
-import Fon from './components/Section/Fon/Fon'
-import FourthBlock from './components/Section/FourthBlock/FourthBlock'
-import ThirdBlock from './components/Section/ThirdBlock/ThirdBlock'
-import FifthBlock from './components/Section/FifthBlock/FifthBlock'
 import Preloader from './components/Preloader/Preloader'
-import CardList from './components/CardList/CardList'
+import HomePage from '../src/pages/HomePage'
+import CardsPage from '../src/pages/CardsPage'
+import NotFoundPage from '../src/pages/NotFoundPage'
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -20,17 +17,19 @@ function App() {
 
   return (
     <>
-      {isLoading ? <Preloader /> :
-        <Layout>
-          <FirstBlock />
-          <Image><Fon /></Image>
-          <SecondBlock />
-          <ThirdBlock><CardList /></ThirdBlock>
-          <FourthBlock />
-          <FifthBlock />
-        </Layout>
-      }
+      <BrowserRouter>
+        {
+          isLoading ? <Preloader /> :
+            <Routes>
+              <Route element={<Layout />} >
+                <Route index element={<HomePage />} />
+                <Route path="/cards" element={<CardsPage />} />
+                <Route path="*" element={<NotFoundPage />} />
+              </Route>
+            </Routes>
+        }
+      </BrowserRouter>
     </>
   )
 }
-export default App
+export default App;

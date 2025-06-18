@@ -327,7 +327,7 @@ hr {
 
 .that {
     background: #3D1EDD;
-     width: 367px;
+    width: 367px;
     height: 6px;
     border-radius: 0;
     border: 0;
@@ -358,7 +358,7 @@ hr {
     color: #707070;
     width: 100%;
     text-align: justify;
-     flex-grow: 1;
+    flex-grow: 1;
 }
 
 .cards {
@@ -375,6 +375,7 @@ hr {
     margin: auto;
 
 }
+
 .name_blok {
     font-family: Inter;
     font-size: 40px;
@@ -382,6 +383,12 @@ hr {
     line-height: 48px;
     letter-spacing: -0.03em;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    /* text-underline-position: from-font;
+    text-decoration-skip-ink: none; */
+    color: #121212;
+
+}
+
+.name_link {
+    text-decoration: none;
 }

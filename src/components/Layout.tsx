@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router'
 import { ReactNode } from "react";
 import Header from './Header/Header'
 import Footer from "./Footer/Footer"
@@ -9,7 +10,8 @@ function Layout({ children }: LayoutProps) {
     return (
         <>
             <Header />
-            <main>{children}</main>
+            {/* <main>{children}</main> */}
+            <main><Outlet /></main>
             <Footer />
         </>
     );

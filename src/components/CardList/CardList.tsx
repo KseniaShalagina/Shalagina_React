@@ -6,8 +6,10 @@ interface PropsCards {
     title: string;
     body: string;
 }
-
-function CardList() {
+interface CardsProps {
+    limit: number;
+}
+function CardList({ limit }: CardsProps) {
     const [cards, setCards] = useState<PropsCards[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
@@ -17,7 +19,7 @@ function CardList() {
             setLoading(true);
             setError(null);
             try {
-                const response = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=3')
+                const response = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=${limit}`)
                 if (!response.ok) {
                     throw new Error("Ошибка загрузки!!!");
                 }
@@ -25,13 +27,13 @@ function CardList() {
                 setCards(data);
             }
             catch (error) {
-                setError("error");
+                setError("error,sorry");
             } finally {
                 setLoading(false);
             }
         };
         fetchData();
-    }, []);
+    }, [limit]);
     if (loading) {
         return <p>Loading.....</p>;
     }
@@ -40,10 +42,10 @@ function CardList() {
     }
     return (
         <div className="cards">
-            {cards.map((card,index) => (
+            {cards.map((card, index) => (
                 <Card
                     key={card.id}
-                    card_name={ `Comment ${index + 1}`}
+                    card_name={`Comment ${index + 1}`}
                     card_text={card.body}
                 />
             ))}
