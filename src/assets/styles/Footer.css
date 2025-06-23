@@ -37,3 +37,22 @@
     color: #080305;
     margin-right: 120px;
 }
+
+@media (max-width: 855px) {
+    .foot_infs {
+        flex-direction: column;
+    }
+
+    .terms {
+        margin-left: 120px;
+    }
+}
+
+@media (max-width: 543px) {
+
+    .terms,
+    .foot_inf,
+    .inf_foot {
+        margin-left: 20px;
+    }
+}

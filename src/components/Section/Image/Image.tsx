@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
 import 'swiper/swiper-bundle.css';
 import PeopleOffice from '../../../assets/image/0x0.webp'
-
+// import PeopleOffice1 from '../../../assets/image/slider.webp'
 interface PropsFon {
     children: JSX.Element;
 }
@@ -22,7 +22,7 @@ function Image({ children }: PropsFon) {
                         Autoplay
                     ]}
                     autoplay={{
-                        delay: 3000,
+                        delay: 300,
                         disableOnInteraction: false,
                     }}
                 >

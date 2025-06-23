@@ -20,3 +20,43 @@ connect {
     width: 700px;
     margin: 137px;
 }
+
+@media (max-width: 1070px) {
+    .fourth_txt {
+        margin-left: 5px;
+        width: 437px;
+    }
+}
+
+@media (max-width: 1021px) {
+    .connect {
+        width: 1048px;
+    }
+}
+
+@media (max-width: 900px) {
+    .connect {
+        flex-direction: column;
+        width: 388px;
+    }
+
+    .fourth_img {
+        width: 400px;
+        height: 400px;
+        gap: 10px;
+    }
+
+    .fourth_txt {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 518px) {
+    .name_blok {
+        width: 390px;
+    }
+
+    .cardtxt {
+        width: 84%;
+    }
+}

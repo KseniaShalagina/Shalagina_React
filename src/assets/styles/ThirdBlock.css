@@ -30,7 +30,7 @@
     background-color: white;
     position: absolute;
     top: 86px;
-    top: 50%;
+    top: 59%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -391,4 +391,28 @@ hr {
 
 .name_link {
     text-decoration: none;
+}
+
+@media (max-width: 705px) {
+    .form {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .big_card_inf {
+        width: 538px;
+    }
+}
+
+@media (max-width: 606px) {
+    .big_card_inf {
+        width: 436px;
+    }
+}
+
+@media (max-width: 509px) {
+    .big_card_inf {
+        width: 379px;
+    }
 }

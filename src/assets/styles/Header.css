@@ -71,3 +71,25 @@ li {
     text-align: left;
     margin-right: 16px;
 }
+
+@media (max-width:684px) {
+    .log {
+        display: none;
+    }
+
+    .butt {
+        display: inline-block;
+        padding-left: 0px;
+        width: 362px;
+    }
+}
+
+@media (max-width:480px) {
+    .headers {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-top: 5px;
+    }
+}

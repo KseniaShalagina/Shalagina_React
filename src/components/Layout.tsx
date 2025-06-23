@@ -1,12 +1,12 @@
 import { Outlet } from 'react-router'
-import { ReactNode } from "react";
+// import { ReactNode } from "react";
 import Header from './Header/Header'
 import Footer from "./Footer/Footer"
 
-interface LayoutProps {
-    children: ReactNode;
-}
-function Layout({ children }: LayoutProps) {
+// interface LayoutProps {
+//     children: ReactNode;
+// }
+function Layout() {
     return (
         <>
             <Header />

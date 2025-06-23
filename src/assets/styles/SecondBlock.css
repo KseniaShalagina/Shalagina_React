@@ -70,3 +70,35 @@
     color: #707070;
 
 }
+
+@media (max-width:1030px) {
+    .name_blok1 {
+        width: 863px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .second_block {
+        width: 100%;
+    }
+}
+
+@media (max-width:861px) {
+    .name_blok1 {
+        font-size: 30px;
+        width: 742px;
+    }
+}
+
+@media (max-width:758px) {
+    .name_blok1 {
+        width: 529px;
+    }
+}
+
+@media (max-width:532px) {
+    .name_blok1 {
+        width: 432px;
+        margin-bottom: 70.9px;
+    }
+}
